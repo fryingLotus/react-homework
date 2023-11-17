@@ -1,0 +1,108 @@
+@import url(App.css);
+
+
+
+
+.navBarBg {
+    background-color: var(--bg-primary);
+    padding: 20px;
+    height: 100px;
+}
+
+.imageNav {
+    background-image: url(assets/beltei_international_university_in_cambodia-removebg-preview.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 90px;
+    
+    height: 70px;
+}
+.grid-navbar-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 10px;
+    background-color: var(--bg-primary);
+   justify-items: center; 
+   color:var( --text-color-primary);
+   font-family: var(--main-font);
+   z-index: 1;
+  top: 0;
+  left: 0;
+  width: 100%;
+  position: fixed;
+   align-items: center;
+   box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+.left {
+    color:var( --text-color-primary);
+    display: flex;
+   text-align: center;
+   letter-spacing: 2px;
+
+}
+.TextNav > p {
+    font-size:var(--font-medium);
+    font-weight: 900;
+    margin: 0;
+    padding: 0;
+}
+.middle ul {
+    display: flex;
+    margin: 0;
+    font-size: var(--font-small);
+    gap: 20px;
+    list-style-type: none;
+   
+
+}
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center ;
+}
+.VisitBtn,
+.ApplyBtn {
+background-color: var(--text-color-primary); /* Green */
+  border: none;
+  color: var(--bg-primary);
+  padding: 10px 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 0;
+  font-size: 16px;
+}
+
+.VisitBtn {
+    margin-left: 10px;
+    background-color: white;
+}
+.SearchBtn {
+    background-image: url(assets/search.svg);
+    background-size: contain;
+    border-radius: 0;
+    background-color: white;
+  
+
+    margin-left: 10px;
+    padding: 10px 23px;
+    border: none;
+    background-repeat: no-repeat;
+}
+.desktop-menu {
+    display: flex;
+  }
+  
+  .mobile-menu {
+    display: none;
+  }
+  
+  @media (max-width: 600px) {
+    .desktop-menu {
+      display: none;
+    }
+    .mobile-menu {
+        
+      display: block;
+    }
+  }

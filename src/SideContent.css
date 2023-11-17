@@ -1,0 +1,75 @@
+@import url(App.css);
+
+
+
+
+
+.sideContent {
+    height: auto;
+    padding-bottom: 30px;
+  
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    font-family: var(--main-font);
+    padding-top: 50px;
+    background-color: var(--bg-secondary);
+
+}
+.grid-side {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    
+    
+    /* lign-items: center;
+    justify-items: center; */
+}
+
+.leftSide {
+    display: flex;
+    flex-direction: column;
+    padding:80px;
+}
+
+.leftSide > h1 {
+    font-size: var(--font-large);
+    color:var(--bg-primary);
+    position: relative;
+    padding-bottom: 20px;
+}
+.leftSide > h1::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    transform: translateX(-50%);
+    height: 2px;
+
+    width: 30%; /* Adjust this to change the width of the border */
+    background: var(--text-color-primary); /* Adjust this to change the color of the border */
+}
+.leftSide > p {
+    padding-top: 10px;
+}
+.imageSide {
+    object-fit: contain;
+    width: 100%;
+    border-radius: 5px;
+}
+.leftButton {
+    width:50%;
+    height: 45px;
+    border-radius: 20px;
+}
+
+@media (max-width: 600px) {
+    .grid-side {
+        grid-template-columns: 1fr;
+    }
+    .leftButton {
+        height: 60px;
+        
+    }
+}

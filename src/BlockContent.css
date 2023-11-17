@@ -1,0 +1,44 @@
+@import url(App.css);
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+.blockContent {
+    display: flex;
+  
+    text-align: center;
+    background-color: var(--bg-primary);
+    justify-content: center;
+    align-items: center;
+    height: 300px;
+    position: relative;
+}
+
+.blockText {
+    width: 50%;
+  color:  var(--text-color-primary);
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--main-font);
+  font-size: 25px;
+  line-height: 34px;
+  display: flex;
+
+  top: auto;
+  bottom: auto;
+}
+
+
+@media (max-width: 600px) {
+    .blockText {
+        width: 80%; /* Adjust width for smaller screens */
+        font-size: 20px; /* Adjust font size for smaller screens */
+    }
+}

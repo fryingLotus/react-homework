@@ -1,0 +1,53 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kanit&family=Lora:wght@500&family=Roboto:wght@300&family=Ubuntu&display=swap');
+
+
+#root {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Kanit', sans-serif;
+  --main-font:'Lora', serif;
+  --bg-primary:#018aaa;
+  --bg-secondary:#fffded;
+  --text-color-primary:#e4ff00;
+  --font-medium:1.4rem;
+  --font-small:1.2rem;
+  --font-large:2.3rem;
+}
+
+/* .logo {
+  height: 6em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+.logo:hover {
+  filter: drop-shadow(0 0 2em #646cffaa);
+}
+.logo.react:hover {
+  filter: drop-shadow(0 0 2em #61dafbaa);
+}
+
+@keyframes logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a:nth-of-type(2) .logo {
+    animation: logo-spin infinite 20s linear;
+  }
+}
+
+.card {
+  padding: 2em;
+}
+
+.read-the-docs {
+  color: #888;
+} */
